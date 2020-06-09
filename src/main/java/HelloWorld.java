@@ -1,3 +1,4 @@
+import sgad.pilotoLib.TrivialLibrary;
 import spark.servlet.SparkApplication;
 
 import static spark.Spark.get;
@@ -9,6 +10,11 @@ public class HelloWorld implements SparkApplication {
 
 	@Override
 	public void init() {
-		get("/hello", (req, res) -> "Hello World");
+		get("/hello", (req, res) -> getLibraryMsg());
 	}
+        
+        private String getLibraryMsg() {
+            TrivialLibrary trivialLibrary = new TrivialLibrary();
+            trivialLibrary.getMessage();
+        }
 }

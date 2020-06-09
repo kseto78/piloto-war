@@ -20,6 +20,13 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.25</version>
 		</dependency>
+                
+      		<dependency>
+			<groupId>sgad.otp-j2-0080</groupId>
+			<artifactId>piloto-lib</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

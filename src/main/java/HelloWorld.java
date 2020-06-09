@@ -15,6 +15,6 @@ public class HelloWorld implements SparkApplication {
         
         private String getLibraryMsg() {
             TrivialLibrary trivialLibrary = new TrivialLibrary();
-            trivialLibrary.getMessage();
+            return trivialLibrary.getMessage();
         }
 }

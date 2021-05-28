@@ -7,11 +7,22 @@ pipeline {
       }
     }
 
-    stage('Bees Bees') {
+    stage('Fluffy Build') {
       steps {
-        echo 'Abejas zummmmmbando'
-        sh '''pwd
-ls -lsha'''
+        sh 'sleep 5'
+        sh 'echo "Success"'
+      }
+    }
+
+    stage('Fluffy Test') {
+      steps {
+        echo 'Placeholder'
+      }
+    }
+
+    stage('Fluffy Deploy') {
+      steps {
+        echo 'Placeholder'
       }
     }
 

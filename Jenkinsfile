@@ -7,5 +7,13 @@ pipeline {
       }
     }
 
+    stage('Bees Bees') {
+      steps {
+        echo 'Abejas zummmmmbando'
+        sh '''pwd
+ls -lsha'''
+      }
+    }
+
   }
 }

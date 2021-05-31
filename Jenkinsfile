@@ -24,6 +24,7 @@ pipeline {
     stage('Fluffy Deploy') {
       steps {
         echo 'Placeholder'
+        emailext(subject: 'Hola', body: 'Este es el body del correo', from: 'jenkins@jenkins.es', to: 'kseto78@gmail.com')
       }
     }
 
